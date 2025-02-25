@@ -1,0 +1,7 @@
+WEATHER_API_KEY=ca2f8ce2c7f44786c96e3b3ccada96d3
+WEATHER_API_URL=https://api.openweathermap.org
+
+PUBLIC_CEP_API_URL=https://viacep.com.br/ws
+
+
+CONTACT_API_URL=http://localhost:3000/api
