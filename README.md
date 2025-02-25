@@ -63,7 +63,7 @@ src
 # 🚀 Execução do Projeto
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/plin-tech-test-frontend.git
+git clone https://github.com/brvnfr/plin-tech-test-frontend.git
 
 # Acesse o diretório do projeto
 cd plin-tech-test-frontend
