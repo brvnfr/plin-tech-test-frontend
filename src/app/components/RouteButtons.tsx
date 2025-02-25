@@ -9,7 +9,7 @@ interface Route {
 
 const routes: Route[] = [
   { name: 'Clima', path: '/weather' },
-  { name: 'Busca CEP', path: '/cep-search' },
+  { name: 'Busca CEP', path: '/cep' },
   { name: 'Contato', path: '/contact' },
 ];
 
