@@ -1,5 +1,11 @@
 # 📋 Desafio Front-End - Plin Tech
 
+
+## 🌐 Live Preview:
+[![Live Preview](https://img.shields.io/badge/Live_Preview-Click_Here-brightgreen)](https://plin-tech-test-frontend.vercel.app)
+
+
+
 ## 💻 Sobre o Desafio
 O objetivo deste desafio é desenvolver uma aplicação utilizando Next.js com as seguintes páginas:
 - 🌦️ **Página de Clima:** Exibe o clima da cidade atual do usuário.
@@ -70,3 +76,4 @@ yarn dev
 ```
 
 ---
+
