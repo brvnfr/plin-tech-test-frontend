@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply transition-colors duration-300;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Background Global */
+body {
+  @apply bg-gray-100 text-gray-900 transition-colors duration-300 dark:bg-gray-900 dark:text-white;
+}
+
+/* Card */
+.card {
+  @apply bg-white/50 border-gray-300 dark:bg-white/10 dark:border-white/20 text-gray-900 dark:text-gray-200 rounded-3xl shadow-lg transition-all duration-500;
+}
+
+/* Botão */
+.button {
+  @apply bg-gray-900 text-white hover:bg-gray-800 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-300 transition-all duration-300 rounded-lg p-2;
+}
+
+
+/* BACKGROUND ROTATIVO E FLUIDO */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.gradient {
+  --size: 600px;
+  --speed: 50s;
+  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+
+  width: var(--size);
+  height: var(--size);
+  filter: blur(calc(var(--size) / 5));
+  background-image: linear-gradient(
+    135deg,
+    hsl(231, 100%, 49%),
+    hsl(298, 100%, 51%)
+  );
+  animation: rotate var(--speed) var(--easing) alternate infinite;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: 0;
+}
+
+@media (min-width: 640px) {
+  .gradient {
+    --size: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gradient {
+    --size: 750px;
+  }
+}
+
+/* BODY */
+body {
+  background-color: #071c39;
+  overflow: hidden;
+}
+
+/* TRANSIÇÃO SUAVE AO MUDAR O TAMANHO DA JANELA */
+* {
+  transition: all 0.4s ease-out;
+}

@@ -1,7 +1,11 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  env: {
+    WEATHER_API_KEY: process.env.WEATHER_API_KEY,
+    WEATHER_API_URL: process.env.WEATHER_API_URL,
+    PUBLIC_CEP_API_URL: process.env.PUBLIC_CEP_API_URL,
+  },
 };
 
 export default nextConfig;
